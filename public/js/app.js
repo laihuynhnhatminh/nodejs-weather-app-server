@@ -1,1 +1,5 @@
-console.log("From a JS file, what did you expect?");
+fetch(url).then((response) => {
+  response.json().then((data) => {
+    console.log(data);
+  });
+});
