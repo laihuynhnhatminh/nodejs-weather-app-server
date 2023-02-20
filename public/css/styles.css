@@ -1,0 +1,28 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.header {
+    min-height: 50px;
+    font-size: 45px;
+}
+
+main {
+    padding-top: 20px;
+    flex: 1;
+}
+
+.nav-links {
+    margin-right: 10px;
+    color: gray;
+    text-decoration: none;
+}
+
+.footer {
+    min-height: 50px;
+    text-align: end;
+}
