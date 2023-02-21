@@ -18,6 +18,8 @@ main {
 
 .nav-links {
   margin-right: 10px;
+  color: #888888;
+  text-decoration: none;
 }
 
 #weatherMessage {
