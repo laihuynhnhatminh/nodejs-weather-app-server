@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,20 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>{{title}}</title>
 </head>
+
 <body>
     <div class="container">
         {{>header}}
         <main>
-            <p>{{pageDescription}}</p>
+            <h4>{{pageDescription}}</h4>
+            <p>This site is created by Lai Huynh Nhat Minh while learning Andrew Mead NodeJS complete course.</p>
+            <p>This site use geocode data from <a href="https://www.mapbox.com/" class="data-origin-link">Mapbox</a> and
+                weather forecast data from <a href="https://weatherstack.com/"
+                    class="data-origin-link">Weatherstack</a>.</p>
+            <p>For further inquiries, please contact me at <a href="mailto:nhatminhngo11@gmail.com">nhatminhngo11@gmail.com</a>.</p>
         </main>
         {{>footer}}
     </div>
 </body>
+
 </html>

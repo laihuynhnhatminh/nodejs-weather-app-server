@@ -1,42 +1,55 @@
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 20%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20%;
 }
 
 .header {
-    min-height: 50px;
-    font-size: 45px;
+  min-height: 50px;
+  font-size: 45px;
 }
 
 main {
-    padding-top: 20px;
-    flex: 1;
+  padding-top: 20px;
+  flex: 1;
 }
 
 .nav-links {
-    margin-right: 10px;
-    color: gray;
-    text-decoration: none;
+  margin-right: 10px;
+}
+
+#weatherMessage {
+  display: inline-block;
+}
+
+.weather-icon {
+  max-width: 24px;
+  max-height: 24px;
+  padding: 0 16px;
+}
+
+a.data-origin-link {
+  color: blue;
+  text-decoration: none;
 }
 
 input {
-    border: 1px solid #cccccc;
-    padding: 8px;
-    min-width: 300px;
+  border: 1px solid #cccccc;
+  padding: 8px;
+  min-width: 300px;
 }
 
 button {
-    cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
-    color: white;
-    padding: 8px;
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
 }
 
 .footer {
-    min-height: 50px;
-    text-align: end;
+  min-height: 50px;
+  text-align: end;
 }
