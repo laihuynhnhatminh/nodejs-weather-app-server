@@ -7,17 +7,15 @@ document.querySelector(".locationSearch").addEventListener("submit", (e) => {
   locationMessage.textContent = "";
   resultMessage.textContent = "Loading...";
 
-  fetch(`http://localhost:3000/weather?address=${location}`).then(
-    (response) => {
-      response.json().then((data) => {
-        if (data.error) {
-          locationMessage.textContent = data.error;
-          resultMessage.textContent = "";
-        } else {
-          locationMessage.textContent = data.location;
-          resultMessage.textContent = data.forecast;
-        }
-      });
-    }
-  );
+  fetch(`/weather?address=${location}`).then((response) => {
+    response.json().then((data) => {
+      if (data.error) {
+        locationMessage.textContent = data.error;
+        resultMessage.textContent = "";
+      } else {
+        locationMessage.textContent = data.location;
+        resultMessage.textContent = data.forecast;
+      }
+    });
+  });
 });
