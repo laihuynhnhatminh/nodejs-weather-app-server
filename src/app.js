@@ -56,7 +56,12 @@ app.get("/weather", (req, res) => {
       }
 
       res.send({
-        forecast: `Current location is ${weatherData.location.name}, the weather is ${weatherData.current.weather_descriptions[0]}, current temperature is ${weatherData.current.temperature} degree Celcius, there is a ${weatherData.current.precip}% chance of raining.`,
+        forecast: `Current temperature is ${weatherData.current.temperature} degree Celcius, feel like ${weatherData.current.feelslike} degree Celcius outside. There is a ${weatherData.current.precip}% chance of raining.`,
+        weatherDescription: {
+          description:
+            weatherData.current.weather_descriptions[0].toLowerCase(),
+          icon: weatherData.current.weather_icons[0],
+        },
         location,
         address: req.query.address,
       });

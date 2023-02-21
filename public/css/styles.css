@@ -20,6 +20,16 @@ main {
   margin-right: 10px;
 }
 
+#weatherMessage {
+  display: inline-block;
+}
+
+.weather-icon {
+  max-width: 24px;
+  max-height: 24px;
+  padding: 0 16px;
+}
+
 a.data-origin-link {
   color: blue;
   text-decoration: none;
