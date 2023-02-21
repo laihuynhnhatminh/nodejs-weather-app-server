@@ -18,7 +18,10 @@ main {
 
 .nav-links {
   margin-right: 10px;
-  color: gray;
+}
+
+a.data-origin-link {
+  color: blue;
   text-decoration: none;
 }
 
